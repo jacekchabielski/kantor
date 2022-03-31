@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/wyswietlanie"
+        android:height="190dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:scrollbars = "vertical"
+        />
+
+
+    <Spinner
+        android:layout_below="@+id/wyswietlanie"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        />
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ilosc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ks"
+        android:hint="podaj ilosc"
+        android:inputType="number"
+        />
+    <Spinner
+        android:layout_marginLeft="50dp"
+        android:id="@+id/waluta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ilosc"
+        android:spinnerMode="dropdown"
+        />
+    <TextView
+        android:id="@+id/za"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="na"
+        android:layout_below="@+id/ilosc"
+        android:layout_toRightOf="@+id/waluta1"
+        />
+    <Spinner
+        android:id="@+id/waluta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ilosc"
+        android:layout_toRightOf="@+id/za"
+        android:spinnerMode="dropdown"
+        />
+    <Button
+        android:id="@+id/przelicz"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/waluta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="przelicz"
+        />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wynik"
+            android:layout_below="@+id/przelicz"
+            android:width="60dp"
+            android:height="60dp"
+            android:textColor="@color/teal_700"
+
+            />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sendMessage"
+        android:text="admin panel"
+        android:layout_below="@+id/za"
+        android:layout_marginTop="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        />
+
+</RelativeLayout>

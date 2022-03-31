@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".logowanie">
+
+    <TextView
+        android:id="@+id/napis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="60dp"
+        android:text="LOGOWANIE"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/napis_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/napis"
+        android:layout_marginTop="20dp"
+        android:height="30dp"
+        android:text="Login"
+        android:gravity="center"
+        android:textSize="10dp"
+        />
+    <EditText
+        android:id="@+id/pole_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/napis_login"
+        android:height="40dp"
+        android:width="200dp"
+        android:layout_centerInParent="true"
+        android:hint="login"
+        />
+
+    <TextView
+        android:id="@+id/napis_haslo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pole_login"
+        android:layout_marginTop="20dp"
+        android:height="30dp"
+        android:text="hasło"
+        android:gravity="center"
+        android:textSize="10dp"
+        />
+    <EditText
+        android:id="@+id/pole_haslo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/napis_haslo"
+        android:height="40dp"
+        android:width="200dp"
+        android:layout_centerInParent="true"
+        android:inputType="textPassword"
+        android:hint="password"
+        />
+    <Button
+        android:id="@+id/logowanie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pole_haslo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="zaloguj"
+
+        />
+</RelativeLayout>

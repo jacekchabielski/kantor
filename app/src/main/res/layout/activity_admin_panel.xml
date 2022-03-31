@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminPanel">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="costam"
+        />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        android:layout_below="@id/title"
+        />
+    <EditText
+        android:id="@+id/kupno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="wartosc kupna"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/name"
+        />
+    <EditText
+        android:id="@+id/sprzedaz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="wartosc sprzedazy"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/kupno"
+        />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="insert new"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/sprzedaz"
+        />
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="update data"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btnInsert"
+        />
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="delete data"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btnUpdate"
+        />
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="view data"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btnDelete"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+     android:layout_margin="15dp"
+        android:id="@+id/powrot"
+        android:onClick="powrot"
+        android:text="powrot"
+        />
+</RelativeLayout>
